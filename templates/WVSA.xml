@@ -1,0 +1,64 @@
+<templateSet group="WVSA">
+  <template name="!filtros" value="$PATH$" description="Create default layout blade" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="fileRelativePath()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!form" value="&lt;form class=&quot;form-horizontal group-border stripped&quot; ajax=&quot;S&quot; confirmar=&quot;S&quot; action=&quot;&quot;&gt;&#10;    $END$&#10;&lt;/form&gt;" description="Create default form tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!form-group" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;col-lg-2 col-md-2 control-label&quot;&gt;$END$&lt;/label&gt;&#10;    &lt;div class=&quot;col-lg-10 col-md-10&quot;&gt;&#10;        &#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Create default form tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!layout" value="@extends($_LAYOUT_)&#10;&#10;@section('titulo')&#10;    &#10;@endsection&#10;&#10;@section('content')&#10;    &#10;@endsection" description="Create default layout blade" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!model" value="\models3\unetvale\wvsa\$END$" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!panel" value="&lt;div class=&quot;panel panel-body&quot;&gt;&#10;    &#10;    $END$&#10;    &#10;&lt;/div&gt;" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!sc" value="&lt;script&gt;&#10;&#10;    $(document).ready(() =&gt; {&#10;    &#10;        $END$&#10;    &#10;    });&#10;    &#10;&lt;/script&gt;" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!table" value="&lt;div class=&quot;table-responsive&quot;&gt;&#10;&#10;    &lt;table class=&quot;table table-condensed table-striped table-hover ytable fz12&quot;&gt;&#10;        &#10;        &lt;thead&gt;&#10;            &lt;tr&gt;&#10;                &lt;th&gt;$END$&lt;/th&gt;&#10;            &lt;/tr&gt;&#10;        &lt;/thead&gt;       &#10;        &#10;        &lt;tbody&gt;&#10;            &lt;tr&gt;&#10;                &lt;td&gt;&lt;/td&gt;&#10;            &lt;/tr&gt;&#10;        &lt;/tbody&gt;&#10;        &#10;    &lt;/table&gt;&#10;    &#10;&lt;/div&gt;" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!tabs" value="&lt;div class=&quot;tabs&quot;&gt;&#10;&#10;    &lt;ul class=&quot;nav nav-tabs&quot;&gt;&#10;&#10;        &lt;li&gt;&lt;a href=&quot;#$EDIT$&quot; data-toggle=&quot;tab&quot;&gt;&lt;/a&gt;&lt;/li&gt;&#10;&#10;    &lt;/ul&gt;&#10;&#10;    &lt;div class=&quot;tab-content&quot;&gt;&#10;&#10;        &lt;div class=&quot;tab-pane fade in&quot; id=&quot;$EDIT$&quot;&gt;&#10;            &#10;        &lt;/div&gt;&#10;&#10;    &lt;/div&gt;&#10;&#10;&lt;/div&gt;" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="!var" value="@php /** @var $END$ */ @endphp" description="Create default script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
